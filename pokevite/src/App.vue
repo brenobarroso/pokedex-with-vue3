@@ -45,6 +45,10 @@ let num = ref(0)
 </div>
 </template>
 <style >
+nav{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 footer{
   position: fixed;
   bottom: 0;
@@ -53,5 +57,7 @@ footer{
   align-items:center;
   justify-content: center;
   height: 56px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 </style>
