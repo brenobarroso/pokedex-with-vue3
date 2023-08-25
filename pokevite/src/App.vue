@@ -11,7 +11,7 @@ let num = ref(0)
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <router-link class="navbar-brand" to="/">
-      <img src="public/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="/favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       PokéVite
     </router-link>
     <router-link class="navbar-brand" to="/"/>
@@ -34,5 +34,24 @@ let num = ref(0)
   <div class="main">
     <router-view></router-view>
   </div>
+
+  <footer class="bg-primary text-light text-center">
+    <div> 
+      Design in {{ new Date().getFullYear()}}
+      <br>
+      Created by Breno Barroso
+    </div>
+  </footer>
 </div>
 </template>
+<style >
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 56px;
+}
+</style>
